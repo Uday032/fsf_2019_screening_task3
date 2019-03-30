@@ -158,7 +158,7 @@ class Table(QWidget):
     @pyqtSlot()
     def selected_button(self):
         self.Details = Item_Detail(self.radio_button_group.checkedId())
-        print(self.radio_button_group.checkedId())
+        # print(self.radio_button_group.checkedId())
 
 
 
