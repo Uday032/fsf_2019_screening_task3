@@ -4,6 +4,7 @@ from PyQt5 import QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
+import table
 
 
 class App(QWidget):
@@ -78,7 +79,8 @@ class App(QWidget):
 
     @pyqtSlot()
     def run(self):
-        print("button1")
+        self.seedatabase = table.Table()
+
     @pyqtSlot()
     def run2(self):
         print("button2")
