@@ -6,6 +6,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 import sqlite3
 from sqlite3 import Error
+import main
 
 class Item_Detail(QWidget):
 
@@ -133,9 +134,13 @@ class Item_Detail(QWidget):
 
 
         self.setLayout(Vertical_layout)
+        Go_to_home_Button.clicked.connect(self.HomePage)
 
         # print(self.details_headline,self.steel_details)
         self.show()
+
+    def HomePage(self):
+        self.home = main.App()
 
     # def Fetch_details(self):
     #
